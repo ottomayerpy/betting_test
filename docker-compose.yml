@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  db:
+    image: 'postgres:latest'
+    ports:
+      - 5432:5432
+  app:
+    build: ./application/
+    ports:
+      - '8000:8000'
+    restart: on-failure
+    depends_on:
+      - db
+    links: 
+      - db
+    environment:
+      POSTGRES_USER: leadsuser
+      POSTGRES_PASSWORD: leadspass123
+      POSTGRES_DB: leadstestdb

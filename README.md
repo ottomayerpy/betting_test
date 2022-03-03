@@ -1,12 +1,12 @@
 # betting_test
-11
+1131
 ## Установка
 ```
 git clone https://github.com/ottomayerpy/betting_test
 cd betting_test
 docker-compose up
 ```
-
+3
 ## API
 
 ### POST

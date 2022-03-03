@@ -1,5 +1,5 @@
 # betting_test
-11
+
 ## Установка
 ```
 git clone https://github.com/ottomayerpy/betting_test
